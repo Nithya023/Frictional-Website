@@ -12,77 +12,55 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Fictional Website</title>
+    <title>Welcome to Fictional Worlds</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome CDN for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Custom styles for Inter font and general body background */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #CCCCFF; /* Medium Lavender background */
-            color: #333; /* Dark gray text */
+            /* Vibrant gradient background: Lavender Mist to Soft Sky Blue */
+            background: linear-gradient(135deg, #E6E6FA, #87CEFA);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* Add some padding for smaller screens */
         }
-        .nav-footer-bg {
-            background-color: #e75480; /* Raspberry Pink for nav and footer */
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-        .primary-color-text {
-            color: #ff69b4; /* Hot Pink for links/headings */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
         }
-        .accent-color-text {
-            color: #87ceeb; /* Sky Blue for highlights */
+        ::-webkit-scrollbar-thumb {
+            background: #BA55D3; /* Highlight color for scrollbar */
+            border-radius: 10px;
         }
-        .btn-primary {
-            background-color: #ff69b4; /* Hot Pink for buttons */
-            color: #4169e1; /* Royal Blue text for buttons */
-        }
-        .btn-primary:hover {
-            background-color: #e0529b; /* Slightly darker pink on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6A0DAD; /* Deep Purple on hover */
         }
     </style>
 </head>
-<body class="flex flex-col min-h-screen">
-    <!-- Navbar -->
-    <nav class="nav-footer-bg p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-white text-2xl font-bold rounded-md px-3 py-1 hover:bg-pink-700 transition-colors flex items-center">
-                <i class="fas fa-magic mr-2"></i> Fictional Co.
-            </a>
-            <div class="flex space-x-4">
-                <a href="index.html" class="primary-color-text text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-pink-700 transition-colors">Home</a>
-                <a href="about.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-pink-700 transition-colors">About</a>
-                <a href="contact.html" class="text-white px-3 py-2 rounded-md text-lg font-medium hover:bg-pink-700 transition-colors">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="flex-grow container mx-auto p-8 my-8 bg-white rounded-lg shadow-lg">
-        <h1 class="text-5xl font-extrabold mb-6 text-center primary-color-text">Welcome to Our Fictional World!</h1>
-        <p class="text-lg leading-relaxed mb-6 text-gray-700">
-            Dive into the realm of imagination and discover what makes our fictional company tick. We are dedicated to exploring new frontiers, crafting compelling narratives, and delivering unparalleled experiences.
+<body class="text-[#333333]"> <!-- Charcoal Gray text color -->
+    <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl transform transition-all duration-300 hover:scale-105">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-6 text-[#6A0DAD]"> <!-- Deep Purple for heading -->
+            Dive into Fictional Worlds
+        </h1>
+        <p class="text-lg md:text-xl text-center mb-8 leading-relaxed text-[#333333]">
+            "Fiction reveals truth that reality obscures." - Ralph Waldo Emerson
         </p>
-        <p class="text-lg leading-relaxed mb-6 text-gray-700">
-            Whether you're here to learn more about our mission, get in touch with our team, or simply explore the possibilities, you've come to the right place. Our journey is just beginning, and we invite you to be a part of it.
+        <p class="text-md md:text-lg text-center mb-10 leading-relaxed text-[#333333]">
+            Explore captivating narratives, unforgettable characters, and worlds beyond imagination. Fictional books offer a unique escape, allowing us to experience different lives, challenge our perspectives, and discover profound insights into the human condition. From epic fantasies to gripping thrillers, and heartwarming romances to thought-provoking dystopias, there's a story waiting for every soul.
         </p>
-        <blockquote class="border-l-4 border-accent-color-text pl-4 italic text-gray-600 mb-6">
-            "Imagination is the beginning of creation. You imagine what you desire, you will what you imagine, and at last, you create what you will."
-            <footer class="mt-2 text-sm text-gray-500">— George Bernard Shaw</footer>
-        </blockquote>
-        <div class="text-center">
-            <a href="about.html" class="inline-block btn-primary px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <i class="fas fa-info-circle mr-2"></i> Learn More About Us
+        <div class="flex justify-center">
+            <a href="books.html" class="inline-block bg-[#BA55D3] hover:bg-[#6A0DAD] text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-[#FFC0CB]"> <!-- Medium Orchid Purple for button, Pastel Pink for ring -->
+                Explore Our Books
             </a>
         </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="nav-footer-bg p-6 text-white text-center shadow-inner mt-auto">
-        <div class="container mx-auto">
-            <p>&copy; 2025 Fictional Co. All rights reserved.</p>
-            <p class="text-sm mt-2">Designed with <span class="accent-color-text">&hearts;</span> for a better tomorrow.</p>
-        </div>
-    </footer>
+    </div>
 </body>
 </html>
