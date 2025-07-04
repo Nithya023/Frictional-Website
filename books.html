@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Fictional Collection</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Vibrant gradient background: Lavender Mist to Soft Sky Blue */
+            background: linear-gradient(135deg, #E6E6FA, #87CEFA);
+            min-height: 100vh;
+            padding: 2rem 1rem; /* Add padding for overall layout */
+            color: #333333; /* Charcoal Gray text */
+            position: relative; /* For background icons */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #BA55D3; /* Highlight color for scrollbar */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #6A0DAD; /* Deep Purple on hover */
+        }
+
+        /* Background icons styling */
+        .icon-background {
+            position: absolute;
+            font-size: 8rem; /* Large icons */
+            color: rgba(255, 255, 255, 0.15); /* Slightly more visible white */
+            pointer-events: none; /* Do not interfere with clicks */
+            z-index: 0; /* Behind content */
+            animation: float 10s ease-in-out infinite;
+        }
+
+        .icon-1 { top: 10%; left: 5%; animation-delay: 0s; }
+        .icon-2 { top: 30%; right: 10%; animation-delay: 2s; font-size: 6rem; }
+        .icon-3 { bottom: 20%; left: 15%; animation-delay: 4s; }
+        .icon-4 { top: 50%; left: 40%; animation-delay: 6s; font-size: 7rem; }
+        .icon-5 { bottom: 5%; right: 20%; animation-delay: 8s; font-size: 9rem; }
+        .icon-6 { top: 20%; right: 30%; animation-delay: 1s; font-size: 5rem; }
+        .icon-7 { bottom: 40%; left: 5%; animation-delay: 3s; font-size: 8.5rem; }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(10px, 20px); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body class="text-[#333333]">
+    <!-- Background Icons -->
+    <i class="fas fa-book icon-background icon-1"></i>
+    <i class="fas fa-feather-alt icon-background icon-2"></i>
+    <i class="fas fa-scroll icon-background icon-3"></i>
+    <i class="fas fa-lightbulb icon-background icon-4"></i>
+    <i class="fas fa-sparkles icon-background icon-5"></i>
+    <i class="fas fa-pencil-alt icon-background icon-6"></i>
+    <i class="fas fa-quote-right icon-background icon-7"></i>
+
+    <div class="relative z-10 max-w-6xl mx-auto bg-white p-6 md:p-10 rounded-2xl shadow-2xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold text-center mb-10 text-[#6A0DAD]"> <!-- Deep Purple for heading -->
+            Our Fictional Collection
+        </h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Book 1 -->
+            <a href="contact.html?book=To Kill a Mockingbird" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Mockingbird" alt="To Kill a Mockingbird Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">To Kill a Mockingbird</h2>
+                <p class="text-[#333333] mb-3">by Harper Lee</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 499</p>
+            </a>
+            <!-- Book 2 -->
+            <a href="contact.html?book=1984" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=1984" alt="1984 Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">1984</h2>
+                <p class="text-[#333333] mb-3">by George Orwell</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 399</p>
+            </a>
+            <!-- Book 3 -->
+            <a href="contact.html?book=Pride and Prejudice" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Pride+Prejudice" alt="Pride and Prejudice Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Pride and Prejudice</h2>
+                <p class="text-[#333333] mb-3">by Jane Austen</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 449</p>
+            </a>
+            <!-- Book 4 -->
+            <a href="contact.html?book=The Great Gatsby" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Gatsby" alt="The Great Gatsby Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Great Gatsby</h2>
+                <p class="text-[#333333] mb-3">by F. Scott Fitzgerald</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 379</p>
+            </a>
+            <!-- Book 5 -->
+            <a href="contact.html?book=Dune" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Dune" alt="Dune Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Dune</h2>
+                <p class="text-[#333333] mb-3">by Frank Herbert</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 699</p>
+            </a>
+            <!-- Book 6 -->
+            <a href="contact.html?book=The Lord of the Rings" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=LotR" alt="The Lord of the Rings Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Lord of the Rings</h2>
+                <p class="text-[#333333] mb-3">by J.R.R. Tolkien</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 899</p>
+            </a>
+            <!-- Book 7 -->
+            <a href="contact.html?book=Harry Potter and the Sorcerer's Stone" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Harry+Potter" alt="Harry Potter and the Sorcerer's Stone Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Harry Potter and the Sorcerer's Stone</h2>
+                <p class="text-[#333333] mb-3">by J.K. Rowling</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 549</p>
+            </a>
+            <!-- Book 8 -->
+            <a href="contact.html?book=The Hobbit" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Hobbit" alt="The Hobbit Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Hobbit</h2>
+                <p class="text-[#333333] mb-3">by J.R.R. Tolkien</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 479</p>
+            </a>
+            <!-- Book 9 -->
+            <a href="contact.html?book=The Catcher in the Rye" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Catcher+Rye" alt="The Catcher in the Rye Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Catcher in the Rye</h2>
+                <p class="text-[#333333] mb-3">by J.D. Salinger</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 389</p>
+            </a>
+            <!-- Book 10 -->
+            <a href="contact.html?book=Brave New World" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Brave+New+World" alt="Brave New World Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Brave New World</h2>
+                <p class="text-[#333333] mb-3">by Aldous Huxley</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 419</p>
+            </a>
+            <!-- Book 11 -->
+            <a href="contact.html?book=One Hundred Years of Solitude" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Solitude" alt="One Hundred Years of Solitude Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">One Hundred Years of Solitude</h2>
+                <p class="text-[#333333] mb-3">by Gabriel García Márquez</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 599</p>
+            </a>
+            <!-- Book 12 -->
+            <a href="contact.html?book=Catch-22" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Catch-22" alt="Catch-22 Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Catch-22</h2>
+                <p class="text-[#333333] mb-3">by Joseph Heller</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 469</p>
+            </a>
+            <!-- Book 13 -->
+            <a href="contact.html?book=The Handmaid's Tale" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Handmaid's+Tale" alt="The Handmaid's Tale Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Handmaid's Tale</h2>
+                <p class="text-[#333333] mb-3">by Margaret Atwood</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 529</p>
+            </a>
+            <!-- Book 14 -->
+            <a href="contact.html?book=Gone Girl" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Gone+Girl" alt="Gone Girl Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Gone Girl</h2>
+                <p class="text-[#333333] mb-3">by Gillian Flynn</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 459</p>
+            </a>
+            <!-- Book 15 -->
+            <a href="contact.html?book=The Alchemist" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Alchemist" alt="The Alchemist Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Alchemist</h2>
+                <p class="text-[#333333] mb-3">by Paulo Coelho</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 349</p>
+            </a>
+            <!-- Book 16 -->
+            <a href="contact.html?book=Fahrenheit 451" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Fahrenheit+451" alt="Fahrenheit 451 Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Fahrenheit 451</h2>
+                <p class="text-[#333333] mb-3">by Ray Bradbury</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 409</p>
+            </a>
+            <!-- Book 17 -->
+            <a href="contact.html?book=The Kite Runner" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Kite+Runner" alt="The Kite Runner Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">The Kite Runner</h2>
+                <p class="text-[#333333] mb-3">by Khaled Hosseini</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 519</p>
+            </a>
+            <!-- Book 18 -->
+            <a href="contact.html?book=Sapiens: A Brief History of Humankind" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Sapiens" alt="Sapiens: A Brief History of Humankind Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Sapiens: A Brief History of Humankind</h2>
+                <p class="text-[#333333] mb-3">by Yuval Noah Harari</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 649</p>
+            </a>
+            <!-- Book 19 -->
+            <a href="contact.html?book=Project Hail Mary" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Hail+Mary" alt="Project Hail Mary Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Project Hail Mary</h2>
+                <p class="text-[#333333] mb-3">by Andy Weir</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 579</p>
+            </a>
+            <!-- Book 20 -->
+            <a href="contact.html?book=Where the Crawdads Sing" class="block bg-[#E6E6FA] p-6 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 border border-[#FFC0CB] flex flex-col items-center text-center">
+                <img src="https://placehold.co/150x200/BA55D3/ffffff?text=Crawdads" alt="Where the Crawdads Sing Cover" class="rounded-lg mb-4 shadow-md">
+                <h2 class="text-xl font-semibold mb-2 text-[#6A0DAD]">Where the Crawdads Sing</h2>
+                <p class="text-[#333333] mb-3">by Delia Owens</p>
+                <p class="text-2xl font-bold text-[#BA55D3]">₹ 489</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
